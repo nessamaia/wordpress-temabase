@@ -1,6 +1,13 @@
 <?php
-/* widgets */
- 
+
+// menus
+add_action( 'init', 'register_my_menus' );
+
+function register_my_menus() {
+	register_nav_menus(array('menu' => __( 'Menu' )));
+}
+
+//widgets
 if (function_exists('register_sidebar'))
 {
 	register_sidebar(array(

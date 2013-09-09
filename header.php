@@ -19,7 +19,7 @@
 		<h2><?php bloginfo('description'); ?></h2>
 		<nav>
 			<ul id="nav">
-				<?php wp_nav_menu(); ?>
+				<?php wp_nav_menu( array( '' => 'menu' ) ); ?>
 			</ul>
 		</nav>
 	</header>
