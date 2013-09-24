@@ -17,9 +17,7 @@
 	<header id="header">
 		<h1><a href="<?php echo home_url( '/' ); ?>"><?php bloginfo('name'); ?></a></h1>
 		<h2><?php bloginfo('description'); ?></h2>
-		<nav>
-			<ul id="nav">
-				<?php wp_nav_menu( array( '' => 'menu' ) ); ?>
-			</ul>
+		<nav class="clearfix">
+			<?php wp_nav_menu( array( '' => 'menu' ) ); ?>
 		</nav>
 	</header>
